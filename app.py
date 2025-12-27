@@ -7,7 +7,7 @@ from PIL import Image
 import io
 
 # 1. Page Configuration
-st.set_page_config(page_title="Odisha Plant Expert", page_icon="🌿", layout="wide")
+st.set_page_config(page_title="Indoor Plant Expert", page_icon="🌿", layout="wide")
 
 # 2. Load API Key
 load_dotenv()
@@ -126,4 +126,5 @@ if user_input:
             st.markdown(response.text)
             
     except Exception as e:
+
         st.error(f"An error occurred: {e}")
