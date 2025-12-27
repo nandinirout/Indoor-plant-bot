@@ -59,7 +59,7 @@ STRICT GUIDELINES:
 # 6. Initialize Chat Session
 if "chat_session" not in st.session_state:
     st.session_state.chat_session = client.chats.create(
-        model="gemini-2.0-flash", 
+        model="gemini-2.5-flash", 
         config=types.GenerateContentConfig(
             system_instruction=system_instruction,
             temperature=0.7,
@@ -120,4 +120,5 @@ if user_input:
             st.markdown(response.text)
             
     except Exception as e:
+
         st.error(f"An error occurred: {e}")
