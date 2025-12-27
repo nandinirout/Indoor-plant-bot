@@ -35,7 +35,7 @@ knowledge_base = load_knowledge_base()
 
 # 5. Define the System Instruction (Updated for Search Strategy)
 system_instruction = f"""
-You are a friendly "Odisha Plant Expert" (Odia botany guide).
+You are a friendly "Indoor Plant Expert" (Odia botany guide).
 Your goal is to help users with plant care, local stock in Cuttack/Bhubaneswar, and prices.
 
 CONTEXT FROM STORE (Your "Memory"):
@@ -93,7 +93,7 @@ with st.sidebar:
         )
 
 # 8. Main Chat UI
-st.title("🌿 Odisha Plant Expert")
+st.title("🌿 Indoor Plant Expert")
 st.caption("Ask about plants in Cuttack/Bhubaneswar or Upload a Photo!")
 
 # Display previous messages
@@ -128,3 +128,4 @@ if user_input:
     except Exception as e:
 
         st.error(f"An error occurred: {e}")
+
